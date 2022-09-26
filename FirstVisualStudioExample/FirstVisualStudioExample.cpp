@@ -1,11 +1,30 @@
 // FirstVisualStudioExample.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include <opencv2/core.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
 #include <iostream>
 
-int main()
+using namespace cv;
+using namespace std;
+
+int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
+    Mat image;
+    image = imread("logo.png", IMREAD_COLOR); // Read the file
+
+    if (image.empty())
+    {
+        cout << "Could not open or find the image" << std::endl;
+        return -1;
+    }
+
+    namedWindow("Display window", WINDOW_AUTOSIZE);
+    imshow("Display window", image);
+
+    waitKey(0);
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
