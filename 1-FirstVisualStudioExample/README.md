@@ -1,0 +1,2 @@
+This example follow the official guide [**How to build applications with OpenCV inside the "Microsoft Visual Studio"**](https://docs.opencv.org/4.x/dd/d6e/tutorial_windows_visual_studio_opencv.html).
+Before running the code, you should have set the environment variables as described here [**Set the OpenCV environment variable and add it to the systems path**](https://docs.opencv.org/4.x/d3/d52/tutorial_windows_install.html#tutorial_windows_install_path).
